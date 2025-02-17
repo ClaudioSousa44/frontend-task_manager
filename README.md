@@ -29,13 +29,17 @@ Este projeto é desenvolvido com Node.js e React.js, e tem como objetivo gerenci
    cd frontend-task_manager
    ```
    
-3. **Instale as dependências:**
+3. **Mude a API_URL dentro de TaskService.tsx para: **
+ 
+   ```bash
+   const API_URL = "http://localhost:3000/tasks";
+   ```
+4. **Instale as dependências:**
  
    ```bash
    npm install
    ```
-
-4. **Inicie o servidor de desenvolvimento:**
+5. **Inicie o servidor de desenvolvimento:**
 
    ```bash
    npm run dev
