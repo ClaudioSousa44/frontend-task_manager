@@ -1,0 +1,84 @@
+.container_main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container_button {
+    display: flex;
+    width: 100%;
+    margin: 0px 10vw;
+    justify-content: end;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.create-task-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4493f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+option {
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+select:hover {
+    border-color: #0056b3;
+}
+
+.create-task-button:hover {
+    background-color: #f4f4f4 !important;
+    color: #4493f8 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .container_button {
+        justify-content: center;
+    }
+}
